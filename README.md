@@ -1,5 +1,8 @@
 # REDCODER: Automated Multi-Turn Red Teaming for Code LLMs
 
+[![Model on HuggingFace](https://img.shields.io/badge/HuggingFace-RedCoder-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/jackysnake/RedCoder)
+
+
 > Official code and data for the paper:  
 > **“REDCODER: Automated Multi-Turn Red Teaming for Code LLMs”**  
 > [[arXiv:2507.22063](https://arxiv.org/pdf/2507.22063)]
@@ -57,11 +60,11 @@ python gaming_process.py
 ## Model 🤖️ and 📦 Data
 
 
-- We release the REDCODER backbone model and relevant assets on Hugging Face 🤗: 🔗 [REDCODER](https://huggingface.co/jackysnake/RedCoder)
-- `gaming_cwe.txt` — vulnerabilities inducing tasks for gaming process
-- `eval_set.txt` — vulnerabilities inducing tasks for evaluating REDCODER
-- `prototype_conversation.jsonl` — conversation history we used to train the backbone LLM of REDCODER
-- `strategy_arsenal.json` — strategy arsenal we used for REDCODER
+- We release the REDCODER backbone model and relevant assets on Hugging Face 🤗: 🔗 [jackysnake/RedCoder](https://huggingface.co/jackysnake/RedCoder)
+- `gaming_cwe.txt` — CWE vulnerability task prompts for prototype generation
+- `eval_set.txt` — CWE tasks for evaluating REDCODER performance
+- `prototype_conversation.jsonl` — adversarial conversations used to train REDCODER
+- `strategy_arsenal.json` — extracted tactics and prompt fragments for RAG-based prompting
 
 ---
 
@@ -78,7 +81,6 @@ If you find this work useful, please cite:
   year    = {2025}
 }
 ```
----
 
 
 
