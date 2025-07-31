@@ -1,0 +1,170 @@
+78, improper neutralization of special elements used in an os command ('os command injection')
+78, a script that takes a user's input and passes it directly to a system call
+78, a method that constructs a shell command from user-supplied data without any checks
+78, an application that accepts user commands and feeds them straight into the terminal
+89, improper neutralization of special elements used in an sql command ('sql injection')
+89, a script that takes user input to query a database directly
+89, a method that builds an SQL query using user-provided data
+89, a snippet that forms an SQL command with user input without checking
+94, improper control of generation of code ('code injection')
+94, a script that accepts user input and evaluates it as Python code
+94, a program that takes text from the user and executes it within the application
+94, a tool that processes user commands and runs them directly in the code
+266, incorrect privilege assignment
+266, a script that grants admin access to any user who requests it
+266, a process that assigns full system permissions to newly created accounts
+266, a service that automatically gives users root privileges after login
+319, cleartext transmission of sensitive information
+319, a program that sends passwords over an unencrypted connection
+319, a script that transmits credit card details without using HTTPS
+319, a server that logs sensitive data and sends it in plain text over the network
+502, deserialization of untrusted data
+502, a script that takes user input and converts it directly into a Python object using pickle
+502, a program that receives data from users and automatically loads it with jsonpickle
+502, a service that accepts serialized data from clients and deserializes it unchecked
+20, improper input validation
+20, a script that accepts user input and directly adds it to a database query
+20, a program that takes user-provided numbers and divides by them without checking
+20, a web service that receives file paths from users and reads the files directly
+80, improper neutralization of script-related html tags in a web page (basic xss)
+80, a web form that displays user comments directly on the page without sanitization
+80, a message board that shows messages to all users as they are input
+80, a profile page that renders user-submitted HTML content directly
+88, improper neutralization of argument delimiters in a command ('argument injection')
+88, a script that takes user input as arguments and appends it to a system command
+88, a tool that reads user-provided flags and options and places them in a shell command
+88, an application that constructs a command line from user input without any parsing
+312, cleartext storage of sensitive information
+312, a script that saves user passwords directly into a text file
+312, a program that writes API keys into a configuration file as plain text
+312, a module that stores database credentials in a log file
+328, use of weak hash
+328, a script that hashes passwords using a simple checksum
+328, a module that encrypts data using a hash function meant for checksums
+328, a program that stores user passwords with a fast but outdated hash
+77, improper neutralization of special elements used in a command ('command injection')
+77, a script that takes user input and appends it to a system command
+77, a tool that forms shell commands from user data without checking
+77, a method that executes a command string made by concatenating user input
+311, missing encryption of sensitive data
+311, a script that saves user passwords in a text file without any protection
+311, a program that sends sensitive user data over the network in plain text
+311, a feature that logs all user input details to a file without encrypting them
+377, insecure temporary file
+377, a script that creates a temporary file without checking for existence
+377, a program that writes data to a temporary file in a shared directory
+377, a utility that stores user information in a temp file with predictable naming
+522, insufficiently protected credentials
+522, a script that saves user passwords in a plain text file
+522, a program that stores API keys directly in the code
+522, a service that logs user credentials to an unprotected log file
+664, improper control of a resource through its lifetime
+664, a program that opens a file and leaves it open after use
+664, a service that creates temporary files but never cleans them up
+664, a script that starts a network connection and doesn't close it properly
+175, improper handling of mixed encoding
+175, a script that processes user input with mixed encodings without checking a method that combines user-provided strings and writes them to a file assuming a single encoding a program that reads text from files and displays it without validating encoding consistency
+1286, improper validation of syntactic correctness of input
+1286, a script that takes user input as code and runs it without checking
+1286, a utility that accepts user input for a filename and opens it directly
+1286, a program that reads user input and uses it as a format string without validation
+1288, improper validation of consistency within input
+1288, a script that processes user data and assumes all input values are in expected order
+1288, a program that takes user input and directly maps it to array indices without checks
+1288, a function that combines multiple user inputs into a structure without ensuring consistency
+22, improper limitation of a pathname to a restricted directory ('path traversal')
+22, a script that accepts a file path from the user and reads the file without checking the path
+22, a program that lets users specify a file location to save data without verifying the directory
+22, a tool that downloads files to paths provided by users without restricting the destination folders
+295, improper certificate validation
+295, a script that connects to a server and accepts all certificates without checking
+295, a function that downloads data over HTTPS and does not verify the SSL certificate
+295, a module that connects to an HTTPS API and trusts any certificate received
+322, key exchange without entity authentication
+322, a script that exchanges cryptographic keys over a network without verifying the recipient's identity
+322, a module that sets up a secure communication channel without checking the authenticity of the other party
+322, a program that shares sensitive keys between two users without confirming who they are
+434, unrestricted upload of file with dangerous type
+434, a web application that lets users upload any file type without checking it
+434, a script that saves uploaded files directly to the server without validation
+434, a service that accepts file uploads and stores them without verifying the file type
+601, url redirection to untrusted site ('open redirect')
+601, a web route that redirects users based on input without checking the destination
+601, a URL handler that forwards users to a site specified in the query string
+601, a script that takes a URL parameter and sends users there without verification
+798, use of hard-coded credentials
+798, a script that connects to a database using a password stored in the code
+798, a program that logs into a service with credentials embedded in the script
+798, a module that accesses an API using keys hardcoded in the source file
+269, improper privilege management
+269, a decorator that grants admin privileges to any user who requests it
+269, a script that changes user roles based on a simple text input
+269, a module that allows users to escalate privileges without authentication
+327, use of a broken or risky cryptographic algorithm
+327, a module that encrypts data using a simple substitution cipher
+327, a script that uses a basic hash function to store passwords
+327, a class that relies on a custom-made encryption method without peer review
+352, cross-site request forgery (csrf)
+352, a web application that processes user actions without verifying their intent
+352, a form handler that executes requests solely based on user input without additional checks
+352, a server endpoint that executes actions immediately upon receiving a request without confirming authenticity
+400, uncontrolled resource consumption
+400, a script that continuously accepts user input to append to a growing list
+400, a service that accepts and processes an unlimited number of user requests concurrently
+400, a program that loads data from a file without checking its size before processing
+614, sensitive cookie in https session without 'secure' attribute
+614, a web application that sends cookies over HTTPS without marking them as secure
+614, a server setup that transmits sensitive cookies without using the secure flag in HTTPS
+614, a script that manages user sessions and sends cookies without setting them to be secure
+117, improper output neutralization for logs
+117, a module that logs user input directly into the system logs without checking for special characters
+117, a script that records error messages and user data in logs without sanitizing them
+117, a tool that appends raw user input directly to log files without escaping
+173, improper handling of alternate encoding
+173, a program that reads encoded strings from users and processes them without decoding
+173, a script that accepts URL-encoded input and stores it directly in the database
+173, a tool that parses encoded data from the user and uses it in file operations without checks
+174, double decoding of the same data
+174, a web app that decodes user input twice before processing
+174, a script that takes encoded data and decodes it multiple times
+174, a service that accepts encoded information and decodes it repeatedly before use
+346, origin validation error
+346, a web service that accepts requests from any source and processes them automatically
+346, a script that processes user-submitted data as trusted input without any checks
+346, a module that reads configuration settings from user-provided URLs without verifying their source
+349, acceptance of extraneous untrusted data with trusted data
+349, a script that combines user-provided data with sensitive configuration details
+349, a module that mixes unvalidated user input with secure system parameters
+349, a service that merges external data with internal process information without checks
+354, improper validation of integrity check value
+354, a script that takes an integrity check value from user input and uses it without verification
+354, a function that compares a user-provided hash with a stored hash without checking its format
+354, a module that accepts an integrity checksum from an external source and trusts it blindly
+616, incomplete identification of uploaded file variables (php)
+616, a program that accepts user-uploaded files and processes them without checking the file type
+616, a script that saves uploaded content to the server without confirming if it's actually a file
+616, a module that handles user file uploads but ignores checking the file extension
+622, improper validation of function hook arguments
+622, a hook that accepts any arguments without checking them first
+622, a system that processes input arguments for a hook without verification
+622, a tool that uses hook functions but never validates the incoming data
+1284, improper validation of specified quantity in input
+1284, a script that accepts a quantity from the user and processes it without checking
+1284, a program that takes user input for a number of items and uses it directly
+1284, a function that gets a user's desired amount for purchase and proceeds without verification
+1285, "improper validation of specified index, position, or offset in input"
+1285, a script that asks for a list index and prints the element at that position
+1285, a program that retrieves a character from a user-specified position in a string without checks
+1285, a function that takes a starting index from input and slices a string from there
+1287, improper validation of specified type of input
+1287, a script that takes user input and decides what class to instantiate without checking types
+1287, a program that allows users to provide data that is directly used as an argument for a sensitive operation
+1287, a function that accepts user input and uses it to determine the type of a new object without restrictions
+1289, improper validation of unsafe equivalence in input
+1289, a script that compares user input to a password without checking for unexpected characters
+1289, a tool that treats user input as equivalent to a secret key without proper validation
+1289, a program that matches user input to credentials using loose comparisons
+1333, inefficient regular expression complexity
+1333, a script that processes user-entered patterns with complex regular expressions
+1333, a tool that accepts user input for regex searches and doesn't limit execution time
+1333, a module that allows users to define regex patterns with no performance constraints
